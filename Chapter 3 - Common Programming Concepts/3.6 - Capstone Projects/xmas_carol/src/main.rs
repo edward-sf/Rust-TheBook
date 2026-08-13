@@ -12,9 +12,9 @@ fn main() {
         "Ten lords a-leaping",
         "Eleven pipers piping",
         "Twelve drummers drumming"
-    ]
+    ];
 
-    let mut curr_verse: u8 = 0;
+    let mut curr_verse: usize = 0;
 
     while curr_verse < 12 {
         let day = match curr_verse {
@@ -43,5 +43,7 @@ fn main() {
                 println!("{}", gifts[i]);
             }
         }
+
+        curr_verse += 1;
     }
 }
